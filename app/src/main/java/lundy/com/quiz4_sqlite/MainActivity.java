@@ -14,6 +14,8 @@ public class MainActivity extends AppCompatActivity {
     DbTransaksi db;
     Button insert,view;
     TextView  hasil;
+
+    //array dengan tipe objek dbTransaksi
     ArrayList<DbTransaksi.Transaksi> alTrx;
 
     @Override
