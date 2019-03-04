@@ -67,7 +67,7 @@ public class DbTransaksi {
     }
 
     //ambil semua data mahasiswa (dibatasi 10)
-//menggunakan raw query
+    //menggunakan raw query
     public ArrayList<Transaksi> getAllTransaksi() {
         Cursor cur = null;
         ArrayList<Transaksi> out = new ArrayList<>();

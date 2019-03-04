@@ -41,7 +41,11 @@ public class MainActivity extends AppCompatActivity {
         //insert data,
         db = new DbTransaksi(getApplicationContext());
         db.open();
+
+        //array deklarasi awal
         alTrx= db.getAllTransaksi();
+
+        //pencacahan
         for(DbTransaksi.Transaksi all:alTrx){
            Toast.makeText(getApplicationContext(),String.format("KODE BAYAR : %s \n JUMLAH BAYAR : %s ",all.KODEBAYAR,all.JUMLAH),Toast.LENGTH_SHORT).show();
             hasil.setText(String.format("KODE BAYAR : %s \nJUMLAH BAYAR : %s ",all.KODEBAYAR,all.JUMLAH));
